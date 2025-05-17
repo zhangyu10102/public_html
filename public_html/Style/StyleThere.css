@@ -1,16 +1,16 @@
-body{
-    background-color: rgba(39, 125, 255, 0.3); 
+body {
+    background-color: rgba(39, 125, 255, 0.3);
 }
-.V2rayIg{
+.V2rayIg {
     width: 80%;
 }
-.TP div{
+.TP div {
     text-align: center;
 }
-.TP div p{
+.TP div p {
     font-size: 20px;
     font-weight: 500;
 }
-#BoxText{
+#BoxText {
     padding-bottom: 40px;
 }

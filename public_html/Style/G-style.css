@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(13, 17, 23);
+}
+#Parent-Box {
+    position: absolute;
+    top: 320px;
+    width: 100%;
+}
+#Parent-Box #G-Box {
+    position: relative;
+    /* background-color: rgba(224, 224, 224, 0.4); */
+    background-color: #151b23;
+    backdrop-filter: blur(10px);
+    width: 75%;
+    border-radius: 10px;
+    padding-bottom: 40px;
+    margin: 20px auto 40px auto;
+    border-bottom: 1px solid rgb(58, 58, 58);
+    border-left: 1px solid rgb(58, 58, 58);
+    border-right: 1px solid rgb(58, 58, 58);
+}
+#Parent-Box #G-Box #G-Title {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    border-top: 1px solid rgb(58, 58, 58);
+    border-radius: 10px;
+}
+#Parent-Box #G-Box .Content-column-Hd {
+    width: 100%;
+    height: 40px;
+    background-color: #252c36;
+    border-top: 1px solid rgb(58, 58, 58);
+}
+#Parent-Box #G-Box .Content-column {
+    width: 100%;
+    height: 64px;
+    background-color: #0d1117;
+    border-top: 1px solid rgb(58, 58, 58);
+    transition: 0.5s ease;
+}
+#Parent-Box #G-Box .Content-column:hover {
+    background-color: #252c36;
+}
+#Parent-Box #G-Box .Content-column div {
+    padding: 10px 0px 0px 10px;
+}
+#Parent-Box #G-Box .Content-column div span {
+    border-radius: 5px;
+    padding: 0px 4px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 4px;
+}
+#Parent-Box #G-Box .Content-column div a {
+    color: white;
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+#Parent-Box #G-Box .Content-column div a:hover {
+    color: #238636;
+    text-decoration: underline solid #238636;
+}
+#Parent-Box #G-Box #G-Title h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#Parent-Box #Declaration-column {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12px;
+    padding: 40px 0px;
+}
+/* 按钮样式 */
+.Button {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: white;
+    display: block;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.Button:hover {
+    width: 300px;
+}
+.Button a {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    color: black;
+}

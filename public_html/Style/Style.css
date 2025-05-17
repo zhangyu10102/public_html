@@ -1,24 +1,29 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-body{
-    background-image: url(../Img/zhangyu.ico);      
+body {
+    /* background-image: url(../Img/zhangyu.ico); */
     background-repeat: repeat-y;
-    background-size: cover; 
+    background-size: cover;
 }
-#glass{
+#glass {
     width: 100%;
     height: 2000px;
-    background-color: rgba(0, 0, 0, 0.6); 
-    backdrop-filter: blur(10px);        
-    /* 问老师 */
-    
+    background-color: rgb(13, 17, 23);
+    /* backdrop-filter: blur(10px); */
+    /* 问老师 莫名其妙哦会导致fixed定位失效*/
+}
+.Box-Shadow {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+a {
+    text-decoration: none;
 }
 /* 导航栏样式 */
-#NB{
+#NB {
     z-index: 10;
-    background-color: rgb(39, 39, 39);
+    background-color: #232d3b;
     width: 100%;
     height: 45px;
     position: fixed;
@@ -28,13 +33,13 @@ body{
     border: 0px;
     border-radius: 10px;
 }
-#NB ul{
+#NB ul {
     padding: 1px;
     height: 45px;
     width: 65%;
     margin: 0px auto;
 }
-#NB ul li{
+#NB ul li {
     display: block;
     width: 10%;
     height: 45px;
@@ -42,97 +47,132 @@ body{
     text-align: center;
     float: left;
     margin-left: 40px;
-    
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-#NB ul li a{    
+#NB ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    
+    transition: 0.5s ease;
 }
-#NB ul li a:hover{
-    color: rgb(219, 125, 18);
-    font-size: 17px;
+#NB ul li a:hover {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    padding: 8px 15px;
 }
-
-
 
 /* 头部样式 */
-#HB{
+#HB {
     position: absolute;
     left: 0px;
     top: 0px;
     width: 100%;
     height: 320px;
     background-color: black;
-    text-align: center
+    text-align: center;
 }
-#HB span{
+#HB p {
+    margin: 150px auto;
+    width: 150px;
     color: white;
     font-size: 30px;
-    height: 320px;
-    line-height: 320px;
+    /* line-height: 320px; */
     text-align: center;
+    white-space: nowrap; /* 不换行 */
 }
 
 /* 个人介绍样式 太乱了 不好整理 太麻烦*/
-#Pd{
+#Pd {
     position: absolute;
     left: 0px;
     top: 320px;
     width: 294px;
     height: 263px;
-    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    background-color: #151b23;
     border: 0px;
     border-radius: 6px;
     margin: 20px 0px 0px 60px;
     text-align: center;
+    color: white;
 }
-#Pd img{
+#Pd img {
     display: block;
     width: 110px;
     height: 110px;
     border-radius: 70px;
-    margin: 20px auto 0px auto;
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    /* margin: 20px auto 0px auto; */
+    transition: 0.5s ease;
 }
-#Pd span{
+#Pd img:hover {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+#Pd span {
+    position: relative;
+    top: 125px;
     font-size: 1.1rem;
     line-height: 3;
 }
-#Pd h6{
+#Pd h6 {
+    position: relative;
+    top: 130px;
     display: block;
     margin: 0px auto;
     font-size: 11px;
     width: 85%;
     font-weight: 1;
 }
-.inf{
+.inf {
     position: absolute;
     margin-left: 60px;
     width: 294px;
-    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    background-color: #151b23;
     border: 0px;
     border-radius: 5px;
+    text-align: center;
 }
-.infTwo{
-    margin-top: 10px;   
+
+.inf span {
+    display: block;
+    margin-top: 20px;
+    font-size: 10px;
+}
+.inf span p {
+    color: white;
+}
+.inf span a {
+    color: black;
+}
+.inf span a:hover {
+    color: red;
+}
+.inf span a:active {
+    font-size: 9px;
+}
+.infTwo {
+    margin-top: 10px;
     left: 0px;
     top: 610px;
     height: 100px;
 }
-.infThere{
+.infThere {
     left: 0px;
     top: 870px;
     height: 170px;
 }
-#infTwo{    
+#infTwo {
     top: 735px;
 }
 
-
-
-
 /* 盒子样式One */
-#BoxOne{
+#BoxOne {
     position: absolute;
     left: 370px;
     top: 340px;
@@ -140,70 +180,113 @@ body{
     height: 700px;
     border: 0px;
     border-radius: 20px;
-    background-color: rgba(224, 224, 224, 0.4); 
-    backdrop-filter: blur(10px);  
+    /* background-color: rgba(224, 224, 224, 0.4); */
+    background-color: #151b23;
+    color: white;
+    backdrop-filter: blur(10px);
     /* 问老师 */
 }
-#BoxOne>span{
-    position: relative;
-    top: 600px;
-}
-#BoxOne span a{
-    text-decoration: none;
-    color: black;
-    font-family: cursive;
-}
-#BoxOne span a:hover{
-    font-size: 17px;
-    color: red;
-}
-#BoxOne span a:active{
-    font-size: 14px;
-    color: brown;
-}
-.SubBox{
+#BoxOne > span {
+    position: absolute;
+    top: 630px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
-    background-color: rgba(231, 231, 231, 0.452); 
-    backdrop-filter: blur(10px);        
+    border-radius: 50px;
+    background-color: white;
+    display: block;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#BoxOne > span:hover {
+    width: 300px;
+}
+#BoxOne span a {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    color: black;
+}
+#BoxOne .SubBox {
+    text-align: center;
+    background-color: #151b23;
+    backdrop-filter: blur(10px);
     position: relative;
     top: 20px;
     left: 20px;
     float: left;
-    border: 1px solid black;
     border-radius: 20px;
     width: 240px;
     height: 135px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
-.SubBox p{
+#BoxOne .SubBox span {
+    border-radius: 5px;
+    padding: 0px 4px;
     font-size: 12px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin-left: 4px;
+}
+.span1 {
+    background-color: #512100;
+    color: #ff8f36;
+}
+.span2 {
+    background-color: #32161e;
+    color: #ffa7af;
+}
+.span3 {
+    background-color: #3d3e27;
+    color: #fbe53a;
+}
+.span4 {
+    background-color: #394136;
+    color: #a9cb86;
+}
+.span5 {
+    background-color: #2e4148;
+    color: #78ebf8;
+}
+.SubBox p {
+    cursor: pointer;
+    font-size: 12px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     margin-top: 4px;
 }
 
-.SubBox .aOne{
+.SubBox .aOne {
     display: block;
     width: 100%;
     height: 100%;
 }
-.SubBox .imgOne{
+.SubBox .imgOne {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    transition: 0.2s ease;
 }
-.SubBox .imgOne:hover{
-    width: 98%;
-    height: 98%;
-    margin-top: 1px;
+.SubBox .imgOne:hover {
+    width: 95%;
+    height: 95%;
+    margin-top: 4px;
 }
-.SubBox .imgOne:active{
-    width: 96%;
-    height: 96%;
-    margin-top: 2px;
+.SubBox .imgOne:active {
+    width: 90%;
+    height: 90%;
+    margin-top: 8px;
 }
-.SubBox p:hover{
+.SubBox p {
+    transition: 0.5s ease;
+}
+.SubBox p:hover {
     color: brown;
 }
-#Sidebar{
+#Sidebar {
     position: relative;
     left: 1x;
     top: 0px;
@@ -212,26 +295,38 @@ body{
     background-color: rgb(51, 51, 51);
     border-radius: 10px;
     text-align: center;
+    transition: all 0.5s ease;
 }
-#Sidebar span{
+#Sidebar:hover {
+    width: 1000px;
+    background-color: antiquewhite;
+    margin-left: 200px;
+    /* margin: 0px auto; */
+    cursor: pointer;
+}
+#Sidebar span {
     color: aliceblue;
     line-height: 35px;
     font-size: 22px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.MgLeft{
+#Sidebar span:hover {
+    color: black;
+}
+.MgLeft {
     margin-left: 30px;
 }
-.MgTop{
+.MgTop {
     margin-top: 60px;
 }
 /* 盒子Two */
-#BoxTwo{
+#BoxTwo {
     position: absolute;
     top: 1060px;
     left: 60px;
-    background-color: rgba(224, 224, 224, 0.4); 
-    backdrop-filter: blur(10px);  
+    /* background-color: rgba(224, 224, 224, 0.4); */
+    background-color: #151b23;
+    backdrop-filter: blur(10px);
     width: 91.5%;
     height: 900px;
     border-radius: 10px;
